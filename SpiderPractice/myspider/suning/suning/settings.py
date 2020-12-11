@@ -1,4 +1,4 @@
-# Scrapy settings for suningSpider project
+# Scrapy settings for suning project
 #
 # For simplicity, this file contains only settings considered important or
 # commonly used. You can find more settings consulting the documentation:
@@ -7,15 +7,15 @@
 #     https://docs.scrapy.org/en/latest/topics/downloader-middleware.html
 #     https://docs.scrapy.org/en/latest/topics/spider-middleware.html
 
-BOT_NAME = 'suningSpider'
+BOT_NAME = 'suning'
 
-SPIDER_MODULES = ['suningSpider.spiders']
-NEWSPIDER_MODULE = 'suningSpider.spiders'
+SPIDER_MODULES = ['suning.spiders']
+NEWSPIDER_MODULE = 'suning.spiders'
 
 LOG_LEVEL = "WARNING"
 
 # Crawl responsibly by identifying yourself (and your website) on the user-agent
-#USER_AGENT = 'suningSpider (+http://www.yourdomain.com)'
+#USER_AGENT = 'suning (+http://www.yourdomain.com)'
 
 # Obey robots.txt rules
 ROBOTSTXT_OBEY = True
@@ -46,13 +46,13 @@ ROBOTSTXT_OBEY = True
 # Enable or disable spider middlewares
 # See https://docs.scrapy.org/en/latest/topics/spider-middleware.html
 #SPIDER_MIDDLEWARES = {
-#    'suningSpider.middlewares.SuningspiderSpiderMiddleware': 543,
+#    'suning.middlewares.SuningSpiderMiddleware': 543,
 #}
 
 # Enable or disable downloader middlewares
 # See https://docs.scrapy.org/en/latest/topics/downloader-middleware.html
 #DOWNLOADER_MIDDLEWARES = {
-#    'suningSpider.middlewares.SuningspiderDownloaderMiddleware': 543,
+#    'suning.middlewares.SuningDownloaderMiddleware': 543,
 #}
 
 # Enable or disable extensions
@@ -64,8 +64,7 @@ ROBOTSTXT_OBEY = True
 # Configure item pipelines
 # See https://docs.scrapy.org/en/latest/topics/item-pipeline.html
 ITEM_PIPELINES = {
-   'suningSpider.pipelines.SuningspiderPipeline': 300,
-   'suningSpider.pipelines.SuningspiderPipeline2': 301,
+   'suning.pipelines.SuningPipeline': 300,
 }
 
 # Enable and configure the AutoThrottle extension (disabled by default)

@@ -8,13 +8,7 @@
 from itemadapter import ItemAdapter
 
 
-class SuningspiderPipeline:
-    def process_item(self, item, spider):
-        item['price'] = 100
-        return item
-
-
-class SuningspiderPipeline2:
+class SuningPipeline:
     def process_item(self, item, spider):
         print(item)
         return item
